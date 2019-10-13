@@ -14,11 +14,11 @@ ref<-mshape(Y$coords)
 Y2 <- rotate.coords(Y, "rotateC") #rotate image
 plot(Y2)
 
-PCA=plotTangentSpace(Y2$coords,verbose=TRUE)
+PCA=plotTangentSpace(Y2$coords,verbose=TRUE) 
 
 
 plotAllSpecimens(Y2$coords, links = links)
-links=matrix(c(1, rep(2:17, each=2), 18,1,18, 12, 19, 19,3),ncol=2, nrow=20, byrow=T)
+links=matrix(c(1, rep(2:17, each=2), 18,1,18, 12, 19, 19,3),ncol=2, nrow=20, byrow=T) #forma figura
 
 col.gp <- rainbow(length(levels(classifier$Lugar)))
 names(col.gp) <- levels(classifier$Lugar)
